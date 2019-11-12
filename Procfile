@@ -1,0 +1,1 @@
+web: gunicorn apod_project.wsgi --log-file -
