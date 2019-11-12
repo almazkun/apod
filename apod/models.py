@@ -9,7 +9,7 @@ class Post(models.Model):
     explanation = models.TextField()
 
 
-    def __str__(init):
+    def __str__(self):
         return self.title
 
 

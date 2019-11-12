@@ -5,11 +5,11 @@
     <div class="container">
         <h1 class="display-4">Astronomy Picture of the Day</h1>
         {% for post in posts %}
-            <div class="card">
+            <div class="my-2">
                 <h2>{{ post.title }}</h2>
                 <p class="lead">{{ post.date }}</p>
                 <a href="{{ post.image_full }}"><img class="img img-fluid" src="{{ post.image_tub }}"></a>
-                <p>{{ post.explanation }}</p>
+                <p class="mt-2">{{ post.explanation|safe }}</p>
             </div>
         {% endfor %}
     </div>
