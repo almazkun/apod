@@ -7,6 +7,7 @@
         {% for post in posts %}
             <div class="my-2">
                 <h2>{{ post.title }}</h2>
+                <p>{{ post.author }}</p>
                 <p class="lead">{{ post.date }}</p>
                 <a href="{{ post.image_full }}"><img class="img img-fluid" src="{{ post.image_tub }}"></a>
                 <p class="mt-2">{{ post.explanation|safe }}</p>
